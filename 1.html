@@ -23,7 +23,7 @@
   "use strict";
 
   const celsUserTemperature = prompt('Введите Вашу температуру в градусах Цельсия:');
-  const farUserTemperature = (9/5) * (+celsUserTemperature) + 32;
+  const farUserTemperature = ((9/5) * (+celsUserTemperature) + 32).toFixed();
   alert (`Цельсий: ${celsUserTemperature}, Фаренгейт: ${farUserTemperature}`);
 
 </script>

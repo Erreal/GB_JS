@@ -29,8 +29,8 @@
   "use strict";
 
   const baseNumberStr = prompt('Введите целое число:');
-  alert(`В числе ${baseNumberStr} количество сотен: ${baseNumberStr.substr(baseNumberStr.length-3,1)}, десятков: ${
-    baseNumberStr.substr(baseNumberStr.length-2,1)}, единиц: ${baseNumberStr.substr(baseNumberStr.length-1,1)}`);
+  alert(`В числе ${baseNumberStr} количество сотен: ${baseNumberStr.length > 2 ? baseNumberStr.substr(baseNumberStr.length-3,1) : 0}, десятков: ${
+    baseNumberStr.length > 1 ? baseNumberStr.substr(baseNumberStr.length-2,1) : 0}, единиц: ${baseNumberStr.length != 0 ? baseNumberStr.substr(baseNumberStr.length-1,1) : 0}`);
 
 </script>
 </body>

@@ -94,18 +94,18 @@
   Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
    */
   document.querySelector('form').addEventListener('submit', (evt) => {
-    evt.preventDefault();
     evt.currentTarget.querySelectorAll('.form-control').forEach(element => {
       if (element.value.length === 0) {
         element.classList.add('error');
+        evt.preventDefault();
       }
     });
   });
   document.querySelectorAll('form .form-control').forEach(element => {
     element.addEventListener('input', (evt) => {
-    evt.target.value.length === 0
-      ? evt.target.classList.add('error')
-      : evt.target.classList.remove('error');
+      evt.target.value.length === 0
+        ? evt.target.classList.add('error')
+        : evt.target.classList.remove('error');
     });
   });
   

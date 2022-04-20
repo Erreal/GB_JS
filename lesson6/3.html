@@ -40,10 +40,10 @@
   let starsContainer = document.querySelector('.stars_container');
 
   let starIndex = function(target, parent) {
-      for(let i = 0; i < parent.children.length; i++) {
-            if(parent.children[i] == target) return i;
-      }
-  }
+    for(let i = 0; i < parent.children.length; i++) {
+      if(parent.children[i] == target) return i;
+    }
+  };
 
   starsContainer.addEventListener('mouseover', (evt) => {
     let currentStar = evt.target;
